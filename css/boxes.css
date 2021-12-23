@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* ----------------Entire HTML doc styling, and every element styling---------------- */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* ----------------Body styling---------------- */
+body {
+    background-color: #070a0a;
+}
+
+/* ----------------NAVBAR STUFF---------------- */
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    text-align: center;
+    position: fixed; /* Fixes the position of the navbar element */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 10001;
+}
+ul {
+    width: 100%;
+}
+ul li {
+    display: inline-block;
+    line-height: 75px; /* This centers the 'a' element within the list element */
+    margin: 0 auto;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0 17px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul li a:hover {
+    color: red;
+}
+.wrapper {
+    width: 100%;
+}
+
+/* ----------------Entire background video section---------------- */
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.full-screen video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(47%);
+    /*
+    filter: opacity(45%);
+    */
+}
+.full-screen h1 {
+    font-size: 35px;
+
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    padding-bottom: 9px; /* When a phone goes into 'horizontal mode' if we don't pad it looks like shit */
+}
+.full-screen h4 {
+    font-size: 12px;
+
+    /* Centering the div, but changing the 'top' so it's a bit below h1 above */
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.full-screen span {
+    color: red;
+}
+
+/* Entire about me section */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+/* Intro section */
+.about-intro {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.about-intro h4 {
+    font-size: 12px;
+    color: red;
+}
+.about-intro h2 {
+    font-size: 20px;
+}
+/* Info section */
+.about-info {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.about-info p {
+    font-family: 'Lato';
+    font-size: 10px;
+    width: 300px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e6e6e6;
+}
+
+.resume {
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.resume-intro {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.resume-intro h4 {
+    font-size: 12px;
+    color: red;
+}
+.resume-intro h2 {
+    font-size: 20px;
+}
+/* Info section */
+.resume-info {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 425%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.resume-info p {
+    font-family: 'Lato';
+    font-size: 10px;
+    width: 300px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e6e6e6;
+    text-align: center;
+}
+.resume-info p span {
+    color: red;
+}
+.resume-info a {
+    text-decoration: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.resume-info a:hover {
+    display: block;
+    color: red;
+}
+
+/* Entire about me section */
+.contact {
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+/* Intro section */
+.contact-intro {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.contact-intro h4 {
+    font-size: 12px;
+    color: red;
+}
+.contact-intro h2 {
+    font-size: 20px;
+}
+/* Info section */
+.contact-info {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.contact-info p {
+    font-family: 'Lato';
+    font-size: 10px;
+    width: 300px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e6e6e6;
+}
