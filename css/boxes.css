@@ -100,8 +100,8 @@ ul li a:hover {
     color: red;
 }
 
-/* Entire about me section */
-.about-me {
+/* ----------------Pages Styling---------------- */
+.page {
     width: 100%;
     height: 100vh;
     text-transform: uppercase;
@@ -110,24 +110,24 @@ ul li a:hover {
     text-align: center;
     position: relative;
 }
-/* Intro section */
-.about-intro {
-    /* This entire section is just centering the div */
+.intro {
+    width: 100%;
     position: absolute;
     top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-.about-intro h4 {
+.intro h4 {
     font-size: 12px;
     color: red;
 }
-.about-intro h2 {
+.intro h2 {
     font-size: 20px;
 }
-/* Info section */
-.about-info {
+
+/* ----------------Info section---------------- */
+.info {
     /* This entire section is just centering the div */
     position: absolute;
     top: 54%;
@@ -136,7 +136,7 @@ ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: left;
 }
-.about-info p {
+.info p {
     font-family: 'Lato';
     font-size: 10px;
     width: 300px;
@@ -145,43 +145,17 @@ ul li a:hover {
     word-spacing: 2px;
     color: #e6e6e6;
 }
-
-.resume {
-    width: 100%;
-    height: 100vh;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.resume-intro {
+/* Info-resume section, different style */
+.info-r {
     /* This entire section is just centering the div */
     position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-.resume-intro h4 {
-    font-size: 12px;
-    color: red;
-}
-.resume-intro h2 {
-    font-size: 20px;
-}
-/* Info section */
-.resume-info {
-    /* This entire section is just centering the div */
-    position: absolute;
-    top: 425%;
+    top: 47.4%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: left;
 }
-.resume-info p {
+.info-r p {
     font-family: 'Lato';
     font-size: 10px;
     width: 300px;
@@ -191,65 +165,40 @@ ul li a:hover {
     color: #e6e6e6;
     text-align: center;
 }
-.resume-info p span {
+.info-r p span {
     color: red;
 }
-.resume-info a {
+.info-r a {
     text-decoration: none;
     position: absolute;
-    top: 120%;
+    top: 127%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-.resume-info a:hover {
-    display: block;
     color: red;
+
+    font-size: 13px;
+    font-weight: bold;
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 10px 15px;
+
+    transition-duration: 225ms;
+}
+.info-r a:hover {
+    display: block;
+    color: #070a0a;
+    background-color: red;
 }
 
-/* Entire about me section */
-.contact {
+/* Contact wrapper, meant to have margin top */
+.wrapper-c {
     width: 100%;
-    height: 100vh;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    position: relative;
-}
-/* Intro section */
-.contact-intro {
-    /* This entire section is just centering the div */
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-.contact-intro h4 {
-    font-size: 12px;
-    color: red;
-}
-.contact-intro h2 {
-    font-size: 20px;
-}
-/* Info section */
-.contact-info {
-    /* This entire section is just centering the div */
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-}
-.contact-info p {
-    font-family: 'Lato';
-    font-size: 10px;
-    width: 300px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    color: #e6e6e6;
 }
