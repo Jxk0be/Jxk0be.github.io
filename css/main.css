@@ -283,4 +283,5 @@ i:hover {
     text-align: center;
     font-size: 8px;
     color: gray;
+    text-transform: none;
 }
