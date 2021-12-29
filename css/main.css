@@ -211,6 +211,7 @@ ul li a:hover {
 .wrapper-c i {
     margin-top: 40px;
     padding: 0 17px;
+    transition-duration: 225ms;
 }
 i:hover {
     color: red;
