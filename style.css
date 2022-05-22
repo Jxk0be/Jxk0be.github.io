@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+/* ------------------ Navigation Bar CSS ------------------ */
+li, a {
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.p-flex {
+    display: flex;
+
+    /* This centers things horizontally  */
+    justify-content: space-between;
+
+    /* This centers things vertically where they are at the same Y-coordinate in a sense */
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 8.5%;
+    padding-right: 10%;
+
+    /* Keep navbar in place */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #101010ec;
+}
+.logo {
+    /* Setting the height manually, keeping width auto so it's proportions stay the same, shrink = 0 so it doesn't shrink */
+    height: 45px;
+    width: auto;
+    flex-shrink: 0;
+}
+.gh-logo{
+    /* Fix the diff size of the logo and icon */
+    padding-right: 40px;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #4afc1e;
+}
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn:hover {
+    color: #4afc1e;
+}
+
+/* ------------------ Logo above Search Bar CSS ------------------ */
+.logo-2 {
+    height: auto;
+    width: 20rem;
+}
+.wrp {
+    display: flex;
+    justify-content: center;
+}
+/* ------------------ Search Bar CSS ------------------ */
+.container {
+    width: 100%;
+    min-height: 0vh;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(37, 37, 37, 0.664);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.507);
+}
+.imgr {
+    width: 25px;
+}
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #4afc1e;
+    transition: all 0.1s ease 0s;
+}
+.search-bar button:hover {
+    background-color: #31b80f;
+}
+
+/* ------------------ Grid Results CSS ------------------ */
+.container2 {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* This holds the entire section of results */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* The box is what holds each image, title, link, etc. */
+.box {
+    flex: 1 1 2rem;
+    /* flex: 1 1 2rem; */
+    margin: 10px 20px;
+    padding: 10px 20px;
+
+    /* This makes them line up at the top of each row */
+    align-self: normal;
+
+    /* Makes each result a flex container and lines them up as a centered column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-content {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.card-action {
+    display: inline-block;
+}
+.card-image {
+    max-width: 300px;
+}

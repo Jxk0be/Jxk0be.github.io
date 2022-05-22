@@ -1,120 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jake Shoffner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/38ff40852e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="icon.ico"/>
-    <script src="https://kit.fontawesome.com/38ff40852e.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anime</title>
 
+    <script src="https://kit.fontawesome.com/38ff40852e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+    <!-- This is the navbar -->
+    <header class = "p-flex">
+        <img src = "images\Anomie-logos_white.png" alt = "Anomie logo" class="logo">
         <nav>
-            <div class="wrapper">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <ul class ="nav-links">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Randomizer</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
+        <a href="https://github.com/Jxk0be" target="_blank"><i class="gh-logo fa-2x fab fa-brands fa-github btn"></i></a>
+    </header>
 
-        <div class="full-screen">
-            <video src="images/Home_Anime_BG_Video.mp4" autoplay loop muted></video>
-            <h1>Jake Shoffner</h1>
-            <h4><span>Computer Science</span> and <span>Statistics</span> Student</h4>
+    <!-- This is the search bar -->
+    <section>
+        <div class="wrp">
+            <img src = "images\Anomie-logos_white.png" alt = "Anomie logo" class="logo-2">
         </div>
+        <div class="container">
+                <form action="" class="search-bar" id = "search-bar" autocomplete="off">
+                <input type="text" placeholder="search for an anime" name="search">
+                <button type="submit"><i class="imgr fa-2x fab fa-brands fa-searchengin"></i></button>
+            </form>
+        </div>
+    </section>
 
-        <div class="page" id="about">
-            <div class="intro">
-                <h4>About</h4>
-                <h2>Get to know me.</h2>
-            </div>
-            <div class="info">
-                <p>
-                    I'm a computer science and statistics major at the University of Tennessee, Knoxville.
-                    Previously, I was a physics major doing research in the area of condensed matter physics.
-                </p>
-                <br>
-                <p>
-                    I am someone who wants to learn as much as possible about whatever I am currently doing.
-                    No matter how much effort, I want to be the best I can be. I love to write small applications
-                    and websites.
-                </p>
-                <br>
-                <p>
-                    Recently, I have been getting into web scraping, analyzing data, and interpreting
-                    data. I constantly want to learn something new and add it to my toolbox.
-                </p>
-            </div>
-        </div>
+    <!-- This is where the JS file is adding the search results -->
+    <div class="container2">
+        <div class="row" id="search-results">
 
-        <div class="page" id="resume">
-            <div class="intro">
-                <h4>Resume</h4>
-                <h2>Take a look at my experience.</h2>
-            </div>
-            <div class="info-r">
-                <p>
-                    <span>Undergraduate Research Assistant</span>
-                    University of Tennessee, Knoxville<br>
-                    (Feb. 2020 - Sept. 2020)
-                </p>
-                <br>
-                <p>
-                    <span>Graphic Design Intern</span><br>
-                    151 Creative<br>
-                    (Sept. 2019 - Jan. 2020)
-                </p>
-                <br>
-                <p>
-                    <span>CS & Stats Student</span><br>
-                    University of Tennessee, Knoxville<br>
-                    (Exp. Graduation May 2024)
-                </p>
-                <a href="data/Jake Shoffner Fall 21 Resume.pdf" target=_blank>More Information</a>
-            </div>
         </div>
-
-        <div class="page-c" id="contact">
-            <div class="intro">
-                <h4>Contact</h4>
-                <h2>Let's talk.</h2>    
-            </div>
-            <div class="wrapper-c">
-                <div class="logo">
-                    <a href="mailto:jshoffn3@vols.utk.edu"><i class="fab fa-mailchimp fa-3x"></i></a>
-                    <h4>Email</h4>
-                </div>
-                <div class="logo">
-                    <a href="https://www.linkedin.com/in/jacobshoffner/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-                    <h4>Linkedin</h4>
-                </div>
-                <div class="logo">
-                    <a href="https://github.com/Jxk0be" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                    <h4>Github</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-f">
-            <div class="section">
-                <h3>Navigation</h3>
-                <div class="logo-f"><a href="#">Home</a></div>
-                <div class="logo-f"><a href="#about">About</a></div>
-                <div class="logo-f"><a href="#resume">Resume</a></div>
-                <div class="logo-f"><a href="#contact">Contact</a></div>
-            </div>
-            <div class="section">
-                <h3>Links</h3>
-                <div class="logo-f"><a href="mailto:jshoffn3@vols.utk.edu">Email</a></div>
-                <div class="logo-f"><a href="https://www.linkedin.com/in/jacobshoffner/" target="_blank">Linkedin</a></div>
-                <div class="logo-f"><a href="https://github.com/Jxk0be" target="_blank">Github</a></div>
-            </div>
-            <div class="section-f"><h3>Jake Shoffner's Personal Website @2022</h3></div>
-        </div>
+    </div>
 </body>
 </html>
