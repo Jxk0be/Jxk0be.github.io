@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* ----------------Entire HTML doc styling, and every element styling---------------- */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* ----------------Body styling---------------- */
+body {
+    background-color: #070a0a;
+}
+
+/* ----------------NAVBAR STUFF---------------- */
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    text-align: center;
+    position: fixed; /* Fixes the position of the navbar element */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 10001;
+}
+ul {
+    width: 100%;
+}
+ul li {
+    display: inline-block;
+    line-height: 75px; /* This centers the 'a' element within the list element */
+    margin: 0 auto;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0 17px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul li a:hover {
+    color: red;
+}
+.wrapper {
+    width: 100%;
+}
+
+/* ----------------Entire background video section---------------- */
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.full-screen video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(47%);
+    /*
+    filter: opacity(45%);
+    */
+}
+.full-screen h1 {
+    font-size: 35px;
+
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    padding-bottom: 9px; /* When a phone goes into 'horizontal mode' if we don't pad it looks like shit */
+}
+.full-screen h4 {
+    font-size: 12px;
+
+    /* Centering the div, but changing the 'top' so it's a bit below h1 above */
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.full-screen span {
+    color: red;
+}
+
+/* ----------------Pages Styling---------------- */
+.page {
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.intro {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.intro h4 {
+    font-size: 12px;
+    color: red;
+}
+.intro h2 {
+    font-size: 20px;
+}
+
+/* ----------------Info section---------------- */
+.info {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.info p {
+    font-family: 'Lato';
+    font-size: 10px;
+    width: 300px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e6e6e6;
+}
+/* Info-resume section, different style */
+.info-r {
+    /* This entire section is just centering the div */
+    position: absolute;
+    top: 47.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.info-r p {
+    font-family: 'Lato';
+    font-size: 10px;
+    width: 300px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e6e6e6;
+    text-align: center;
+}
+.info-r p span {
+    color: red;
+}
+.info-r a {
+    text-decoration: none;
+    position: absolute;
+    top: 127%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: red;
+
+    font-size: 13px;
+    font-weight: bold;
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 10px 15px;
+
+    transition-duration: 225ms;
+}
+.info-r a:hover {
+    display: block;
+    color: #070a0a;
+    background-color: red;
+}
+
+/* ----------------Contact Section---------------- */
+.page-c {
+    width: 100%;
+    height: 80vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.wrapper-c {
+    width: 100%;
+    position: absolute;
+    top: 57.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.wrapper-c i {
+    margin-top: 40px;
+    padding: 0 17px;
+    transition-duration: 225ms;
+}
+i:hover {
+    color: red;
+}
+
+/* ----------------Footer Section---------------- */
+.page-f {
+    width: 100%;
+    height: 15vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+.logo h4 {
+    font-size: 12px;
+    color: #e6e6e6;
+
+    font-family: 'Lato';
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.section {
+    font-family: 'Lato';
+    font-size: 12px;
+    margin-top: 15px;
+    width: unset;
+    padding: 0px 0px 0px 32px;
+    float: left;
+}
+.section h3 {
+    color: gray;
+    margin-bottom: 3px;
+    float: left;
+}
+.section a {
+    text-transform: none;
+    text-decoration: none;
+    color: #e6e6e6;
+    text-align: left;
+    font-size: 12px;
+}
+.logo-f {
+    text-align: left;
+
+    font-size: 12px;
+    color: #e6e6e6;
+    font-family: 'Lato';
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    margin-bottom: 3px;
+}
+.section-f {
+    font-family: 'Lato';
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.section-f h3 {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 8px;
+    color: gray;
+    text-transform: none;
+}
