@@ -119,6 +119,7 @@ li, a {
     background-color: #4afc1e;
     transition: all 0.1s ease 0s;
     flex-shrink: 0;
+    cursor: pointer;
 }
 .search-bar button:hover {
     background-color: #31b80f;
@@ -140,9 +141,8 @@ li, a {
 /* The box is what holds each image, title, link, etc. */
 .box {
     flex: 1 1 2rem;
-    /* flex: 1 1 2rem; */
     margin: 10px 20px;
-    padding: 10px 20px;
+    padding: 8px 5px;
 
     /* This makes them line up at the top of each row */
     align-self: normal;
@@ -151,15 +151,78 @@ li, a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: rgba(128, 128, 128, 0.148); */
+
+    background-color: #d7e6d509;
+    /* max-width: 270px; */
+    /* max-height: 450px; */
+    min-width: 260px;
+    max-width: 260px;
 }
 .card-content {
-    font-size: 0.9rem;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 6px 0;
+    width: 90%;
+}
+.card-content h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin: 5px 0;
+    color: rgb(243, 240, 240);
+    transition: all 0.1s ease 0s;
+}
+.card-content h3:hover {
+    color: #31b80f;
+}
+.card-content p {
+    color: rgb(243, 240, 240);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin: 3px 0;
+    transition: all 0.1s ease 0s;
+}
+.card-content p:hover {
+    color: #31b80f;
 }
 .card-action {
     display: inline-block;
 }
 .card-image {
-    max-width: 300px;
+    /* max-width: 250px; */
+    flex: 1 1 20rem;
+    object-fit: cover;
+}
+
+/* Button styling for TOP and RANDOM pages */
+.cont3 {
+    display: flex;
+    justify-content: center;
+
+    /* This centers things vertically where they are at the same Y-coordinate in a sense */
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 6.6%;
+}
+.cont4 button {
+    margin: 3px 20px;
+    flex-shrink: 0;
+    width: 180px;
+}
+.btn-1 {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding: 20px 15px;
+    border-radius: 30px;
+    transition: all 0.1s ease 0s;
+    background-color: #4afc1e;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.btn-1:hover {
+    background-color: rgba(37, 37, 37, 0.664);
+    color: white;
+    border: 2px solid white;
 }
